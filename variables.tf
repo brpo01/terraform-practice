@@ -10,6 +10,10 @@ variable image {
           dev = "quay.io/influxdb/influxdb:v2.0.2"
           prod = "quay.io/influxdb/influxdb:v2.0.2"
       }
+      grafana = {
+          dev = "grafana/grafana:6.5.0"
+          prod = "grafana/grafana:6.5.0"
+      }
     }
 }
 
@@ -44,6 +48,16 @@ variable "int_influxdb_port" {
   validation {
     condition = var.int_influxdb_port == 8086
     error_message = "The internal port for influxdb must be 8086."
+  }
+}
+
+variable "int_grafana_port" {
+  type = number
+  default = 3000
+  
+  validation {
+    condition = var.int_grafana_port == 3000
+    error_message = "The internal port for grafana must be 3000."
   }
 }
 

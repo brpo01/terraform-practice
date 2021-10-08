@@ -4,7 +4,11 @@ ext_port = {
         prod = [1880]
     }
     influxdb = {
-        dev = [8186, 8287]
+        dev = [8186]
         prod = [8086]
+    }
+    grafana = {
+        dev = [4000]
+        prod = [3000]
     }
 }
