@@ -8,3 +8,8 @@
 #   value = module.container[*].name
 #   description = "the name of the container"
 # }
+
+output "application_access" {
+  value = module.container[*]
+  description = "The name, ipaddress & ports of the containers"
+}
