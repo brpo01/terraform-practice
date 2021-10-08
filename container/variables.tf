@@ -7,3 +7,5 @@ variable internal_in {}
 variable external_in {}
 
 variable container_path_in {}
+
+variable count_in {}
