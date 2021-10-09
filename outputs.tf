@@ -10,6 +10,6 @@
 # }
 
 output "application_access" {
-  value = module.container[*]
+  value       = module.container[*]
   description = "The name, ipaddress & ports of the containers"
 }

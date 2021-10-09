@@ -1,0 +1,2 @@
+grafana-dev-zybx: 172.17.0.2:4001
+grafana-dev-1vkh: 172.17.0.3:4000
